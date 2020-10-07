@@ -1,3 +1,25 @@
+########################################################################################################################
+#   CMake
+
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+/cmake-build-debug/
+/cmake-build-release/
+/cmake-build-debug-gnu/
+/cmake-build-release-gnu/
+
+########################################################################################################################
+#   C++
+
 # Prerequisites
 *.d
 
@@ -30,3 +52,13 @@
 *.exe
 *.out
 *.app
+
+########################################################################################################################
+#   Mac Os
+
+*.DS_Store
+
+########################################################################################################################
+#   CLion
+
+.idea
