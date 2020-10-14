@@ -3,4 +3,7 @@
 
 #include "pch.h"
 
+#include "Shape.h"
+#include "abstract.h"
+
 #endif //PGE_TRISYCL_EXTENSION_OLCSYCL_H
