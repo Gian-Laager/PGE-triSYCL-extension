@@ -80,6 +80,7 @@ TEST_F(ShapeTest, SetShapePoint_WithPoint_MultiplePoints_WillSetTheValueCorectyl
 {
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
     for (int x = 0; x < w; x++)
         for (int y = 0; y < h; y++)
             shape.setPoint(constructPoint(x, y));
@@ -117,6 +118,8 @@ TEST_F(ShapeTest, NotPosibleThatThereAreDublicatedIndices)
 {
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
+
     for (int x = 0; x < w; x++)
         for (int y = 0; y < h; y++)
             for (int i = 0; i < 5; i++)
@@ -136,6 +139,7 @@ TEST_F(ShapeTest, WillDrawFunction_int_drawModeNormal_SetPGEpCol)
     pge.SetPixelMode(olc::Pixel::NORMAL);
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
     pge.SetDrawTarget(new olc::Sprite(w, h));
 
     for (int x = 0; x < w; x++)
@@ -156,6 +160,7 @@ TEST_F(ShapeTest, WillDrawFunction_vector_drawModeNormal_SetPGEpCol)
     pge.SetPixelMode(olc::Pixel::NORMAL);
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
     pge.SetDrawTarget(new olc::Sprite(w, h));
 
     for (int x = 0; x < w; x++)
@@ -177,6 +182,7 @@ TEST_F(ShapeTest, WillDrawFunction_int_drawModeAlpha_SetPGEpCol)
 
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
     pge.SetDrawTarget(new olc::Sprite(w, h));
 
     olc::Pixel* pColDataCopy = new olc::Pixel[pge.GetDrawTargetWidth() * pge.GetDrawTargetHeight()];
@@ -207,6 +213,7 @@ TEST_F(ShapeTest, WillDrawFunction_vector_drawModeAlpha_SetPGEpCol)
     pge.SetPixelMode(olc::Pixel::ALPHA);
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
     pge.SetDrawTarget(new olc::Sprite(w, h));
     olc::Pixel* pColDataCopy = new olc::Pixel[pge.GetDrawTargetWidth() * pge.GetDrawTargetHeight()];
     memcpy(pColDataCopy, pge.GetDrawTarget()->pColData,
@@ -237,6 +244,7 @@ TEST_F(ShapeTest, WillDrawFunction_int_dawModeMask_SetPGEpCol)
 
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
     pge.SetDrawTarget(new olc::Sprite(w, h));
     olc::Pixel* pColDataCopy = new olc::Pixel[pge.GetDrawTargetWidth() * pge.GetDrawTargetHeight()];
     memcpy(pColDataCopy, pge.GetDrawTarget()->pColData,
@@ -266,6 +274,7 @@ TEST_F(ShapeTest, WillDrawFunction_vector_drawModeMask_SetPGEpCol)
 
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
     pge.SetDrawTarget(new olc::Sprite(w, h));
     olc::Pixel* pColDataCopy = new olc::Pixel[pge.GetDrawTargetWidth() * pge.GetDrawTargetHeight()];
     memcpy(pColDataCopy, pge.GetDrawTarget()->pColData,
@@ -306,6 +315,8 @@ TEST_F(ShapeTest, WillDrawFunction_int_dawModeCustom_SetPGEpCol)
 
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
+
     pge.SetDrawTarget(new olc::Sprite(w, h));
     olc::Pixel* pColDataCopy = new olc::Pixel[pge.GetDrawTargetWidth() * pge.GetDrawTargetHeight()];
     memcpy(pColDataCopy, pge.GetDrawTarget()->pColData,
@@ -335,6 +346,8 @@ TEST_F(ShapeTest, WillDrawFunction_vector_dawModeCustom_SetPGEpCol)
 
     const int w = 100;
     const int h = 150;
+    shape.reserve(w * h);
+
     pge.SetDrawTarget(new olc::Sprite(w, h));
     olc::Pixel* pColDataCopy = new olc::Pixel[pge.GetDrawTargetWidth() * pge.GetDrawTargetHeight()];
     memcpy(pColDataCopy, pge.GetDrawTarget()->pColData,
@@ -357,5 +370,34 @@ TEST_F(ShapeTest, WillDrawFunction_vector_dawModeCustom_SetPGEpCol)
     }
 }
 
+TEST_F(ShapeTest, WillReserveSetBufferSizeAccordingly)
+{
+    int size = 20;
+    shape.reserve(size);
+    ASSERT_EQ(shape.capacity(), size);
+}
 
+TEST_F(ShapeTest, WillReserveSetBufferSizeAccordinglyWhenThersAnInitalSize)
+{
+    int size = 20;
+    for (int i = 0; i < size; i++)
+        shape.setPoint(constructPoint(i, i));
+    shape.reserve(size * 2);
+    ASSERT_EQ(shape.capacity(), size * 2);
+}
+
+TEST_F(ShapeTest, WillIntConstructorReserveRightsize)
+{
+    const int size = 10;
+    olc::sycl::Shape s{size};
+    ASSERT_EQ(s.capacity(), size);
+}
+
+TEST_F(ShapeTest, WillSizeReturnRightValue)
+{
+    int size = 20;
+    for (int i = 0; i < size; i++)
+        shape.setPoint(constructPoint(i, i));
+    ASSERT_EQ(size, shape.size());
+}
 

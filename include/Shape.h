@@ -23,6 +23,8 @@ namespace olc::sycl
     public:
         Shape();
 
+        Shape(int initialSize);
+
         void setPoint(int x, int y, const olc::Pixel& color) override;
 
         void setPoint(const Point& point) override;
@@ -37,6 +39,11 @@ namespace olc::sycl
 
         static olc::Pixel
         calcPixelColorWithAlpha(float blendFactor, const olc::Pixel& nColor, const olc::Pixel& pColor);
+
+        void reserve(int size) override;
+
+        int capacity() const override;
+        int size() const override;
     };
 }
 

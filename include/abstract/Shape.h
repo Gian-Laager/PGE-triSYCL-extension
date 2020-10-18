@@ -48,7 +48,14 @@ namespace olc::sycl::abs
 
         virtual bool draw(olc::PixelGameEngine* pge, int x, int y) const = 0;
 
+        virtual void reserve(int size) = 0;
+
+        virtual int capacity() const = 0;
+        virtual int size() const = 0;
+
         Shape();
+
+        Shape(int initialSize);
     };
 }
 

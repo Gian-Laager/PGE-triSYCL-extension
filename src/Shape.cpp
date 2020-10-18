@@ -86,6 +86,7 @@ bool olc::sycl::Shape::drawMask(const vi2d& pos, cl::sycl::buffer<olc::Pixel, 2>
                                             (unsigned long) accBuffer[i].x + pos.x}] = accBuffer[i].color;
         });
     });
+    return true;
 }
 
 bool olc::sycl::Shape::drawCustom(olc::sycl::PixelGameEngine* pge, const vi2d& pos, cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const
@@ -138,4 +139,24 @@ olc::Pixel olc::sycl::Shape::calcPixelColorWithAlpha(float blendFactor, const ol
 bool olc::sycl::Shape::draw(olc::PixelGameEngine* pge, int x, int y) const
 {
     return draw(pge, {x, y});
+}
+
+void olc::sycl::Shape::reserve(int size)
+{
+    buffer.reserve(size);
+}
+
+int olc::sycl::Shape::capacity() const
+{
+    return buffer.capacity();
+}
+
+int olc::sycl::Shape::size() const
+{
+    return buffer.size();
+}
+
+olc::sycl::Shape::Shape(int initialSize) : olc::sycl::abs::Shape(initialSize)
+{
+
 }
