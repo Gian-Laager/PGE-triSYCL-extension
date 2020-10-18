@@ -3,6 +3,11 @@
 
 #include "pch.h"
 
+namespace olc::sycl
+{
+    class PixelGameEngine;
+}
+
 namespace olc::sycl::abs
 {
     class Shape
@@ -16,11 +21,19 @@ namespace olc::sycl::abs
 
     protected:
         std::vector<Point> buffer;
-        cl::sycl::buffer<Point, 1> syclBuffer;
+        mutable cl::sycl::buffer<Point, 1> syclBuffer;
         cl::sycl::default_selector syclDeviceSelector;
-        cl::sycl::queue syclQueue;
+        mutable cl::sycl::queue syclQueue;
 
-        void updateSyclBuffer();
+        void updateSyclBuffer() const;
+
+        virtual bool drawNormal(const olc::vi2d& pos, cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const = 0;
+
+        virtual bool drawMask(const olc::vi2d& pos, cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const = 0;
+
+        virtual bool drawAlpha(olc::sycl::PixelGameEngine* pge,const olc::vi2d& pos, cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const = 0;
+
+        virtual bool drawCustom(olc::sycl::PixelGameEngine* pge,const olc::vi2d& pos, cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const = 0;
 
     public:
         virtual void setPoint(int x, int y, const olc::Pixel& color) = 0;
@@ -30,6 +43,10 @@ namespace olc::sycl::abs
         virtual Point getPoint(int x, int y) const = 0;
 
         virtual std::vector<Point> getBuffer() const = 0;
+
+        virtual bool draw(olc::PixelGameEngine* pge, const olc::vi2d& pos) const = 0;
+
+        virtual bool draw(olc::PixelGameEngine* pge, int x, int y) const = 0;
 
         Shape();
     };

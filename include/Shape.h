@@ -2,13 +2,25 @@
 #define PGE_TRISYCL_EXTENSION_SHAPE_H
 
 #include "pch.h"
-#include "abstract/Shape.h"
+#include "abstract.h"
 
 namespace olc::sycl
 {
     class Shape : public olc::sycl::abs::Shape
     {
-     public:
+    protected:
+        bool drawNormal(const olc::vi2d& pos, cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const override;
+
+        bool drawMask(const olc::vi2d& pos,
+                      cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const override;
+
+        bool drawAlpha(olc::sycl::PixelGameEngine* pge, const olc::vi2d& pos,
+                       cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const override;
+
+        bool drawCustom(olc::sycl::PixelGameEngine* pge, const olc::vi2d& pos,
+                        cl::sycl::buffer<olc::Pixel, 2>& b_pColData) const override;
+
+    public:
         Shape();
 
         void setPoint(int x, int y, const olc::Pixel& color) override;
@@ -18,6 +30,13 @@ namespace olc::sycl
         Point getPoint(int x, int y) const override;
 
         std::vector<Point> getBuffer() const override;
+
+        bool draw(olc::PixelGameEngine* pge, const olc::vi2d& pos) const override;
+
+        bool draw(olc::PixelGameEngine* pge, int x, int y) const override;
+
+        static olc::Pixel
+        calcPixelColorWithAlpha(float blendFactor, const olc::Pixel& nColor, const olc::Pixel& pColor);
     };
 }
 
