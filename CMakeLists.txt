@@ -9,19 +9,25 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(SRC
         ${CMAKE_CURRENT_LIST_DIR}/src/olcSYCL.cpp
-        src/Shape.cpp src/abstract/Shape.cpp)
+        ${CMAKE_CURRENT_LIST_DIR}/src/Shape.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/abstract/Shape.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/Texture.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/abstract/Texture.cpp)
 
 set(HEAD
         ${CMAKE_CURRENT_LIST_DIR}/include/olcSYCL.h
         ${CMAKE_CURRENT_LIST_DIR}/include/Shape.h
         ${CMAKE_CURRENT_LIST_DIR}/include/abstract.h
-        include/abstract/Shape.h)
+        ${CMAKE_CURRENT_LIST_DIR}/include/abstract/Shape.h
+        ${CMAKE_CURRENT_LIST_DIR}/include/abstract/Texture.h
+        ${CMAKE_CURRENT_LIST_DIR}/include/Texture.h)
 
 set(PCH
         ${CMAKE_CURRENT_LIST_DIR}/include/pch.h
 )
 
 set(Boost_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/deps/boost)
+
 include_directories(
         ${CMAKE_CURRENT_LIST_DIR}/include
         ${CMAKE_CURRENT_LIST_DIR}/src
@@ -30,7 +36,6 @@ include_directories(
         ${CMAKE_CURRENT_LIST_DIR}/deps/SYCL/contrib
         ${CMAKE_CURRENT_LIST_DIR}/deps/olcPGE/OneLoneCoder
 )
-
 
 add_library(${PROJECT_NAME} STATIC ${SRC} ${HEAD})
 
@@ -59,11 +64,15 @@ set(TESTS_DIR ${CMAKE_CURRENT_LIST_DIR}/tests)
 set(TESTS_SRC
         ${TESTS_DIR}/src/test/main.cpp
         ${TESTS_DIR}/src/test/Shape.cpp
+        ${TESTS_DIR}/src/test/Texture.cpp
 )
 
 set(TESTS_PCH ${TESTS_DIR}/include/test/pch.h)
 
-set(TESTS_HEAD tests/include/test/Shape.h)
+set(TESTS_HEAD
+        ${TESTS_DIR}/include/test/Shape.h
+        ${TESTS_DIR}/include/test/Texture.h
+)
 
 set(TESTS_LIBS
         ${TESTS_DIR}/deps/googletest/build/lib/libgtest.a

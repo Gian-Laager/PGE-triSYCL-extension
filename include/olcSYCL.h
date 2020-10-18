@@ -4,6 +4,7 @@
 #include "pch.h"
 
 #include "Shape.h"
+#include "Texture.h"
 
 #include "abstract.h"
 

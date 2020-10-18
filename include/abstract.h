@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include "abstract/Shape.h"
+#include "abstract/Texture.h"
 
 namespace olc::sycl
 {
