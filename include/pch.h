@@ -5,7 +5,6 @@
 
 #include <iostream>
 
-#define OLC_PGE_APPLICATION
 #include "olcPixelGameEngine.h"
 
 #endif //PGE_TRISYCL_EXTENSION_PCH_H

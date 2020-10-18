@@ -142,12 +142,12 @@ clang-darwin.compile.c++ bin.v2/libs/filesystem/config/clang-darwin-12.0/debug/t
 ...found 8 targets...
 ...updating 7 targets...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_auto_declarations.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:216:7: error: "Defect macro BOOST_NO_CXX11_AUTO_DECLARATIONS is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:216:7: error: "Defect macro BOOST_NO_CXX11_AUTO_DECLARATIONS is defined."
 #     error "Defect macro BOOST_NO_CXX11_AUTO_DECLARATIONS is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_AUTO_DECLARATIONS -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_auto_declarations.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_AUTO_DECLARATIONS -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_auto_declarations.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_auto_declarations.o...
 ...failed updating 1 target...
@@ -155,144 +155,144 @@ clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threa
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_constexpr.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:251:7: error: "Defect macro BOOST_NO_CXX11_CONSTEXPR is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:251:7: error: "Defect macro BOOST_NO_CXX11_CONSTEXPR is defined."
 #     error "Defect macro BOOST_NO_CXX11_CONSTEXPR is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_CONSTEXPR -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_constexpr.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_CONSTEXPR -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_constexpr.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_constexpr.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_defaulted_functions.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:611:7: error: "Defect macro BOOST_NO_CXX11_DEFAULTED_FUNCTIONS is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:611:7: error: "Defect macro BOOST_NO_CXX11_DEFAULTED_FUNCTIONS is defined."
 #     error "Defect macro BOOST_NO_CXX11_DEFAULTED_FUNCTIONS is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_DEFAULTED_FUNCTIONS -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_defaulted_functions.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_DEFAULTED_FUNCTIONS -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_defaulted_functions.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_defaulted_functions.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_final.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:311:7: error: "Defect macro BOOST_NO_CXX11_FINAL is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:311:7: error: "Defect macro BOOST_NO_CXX11_FINAL is defined."
 #     error "Defect macro BOOST_NO_CXX11_FINAL is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_FINAL -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_final.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_FINAL -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_final.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_final.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_mutex.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:356:7: error: "Defect macro BOOST_NO_CXX11_HDR_MUTEX is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:356:7: error: "Defect macro BOOST_NO_CXX11_HDR_MUTEX is defined."
 #     error "Defect macro BOOST_NO_CXX11_HDR_MUTEX is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_HDR_MUTEX -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_mutex.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_HDR_MUTEX -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_mutex.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_mutex.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_tuple.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:386:7: error: "Defect macro BOOST_NO_CXX11_HDR_TUPLE is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:386:7: error: "Defect macro BOOST_NO_CXX11_HDR_TUPLE is defined."
 #     error "Defect macro BOOST_NO_CXX11_HDR_TUPLE is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_HDR_TUPLE -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_tuple.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_HDR_TUPLE -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_tuple.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_hdr_tuple.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_lambdas.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:716:7: error: "Defect macro BOOST_NO_CXX11_LAMBDAS is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:716:7: error: "Defect macro BOOST_NO_CXX11_LAMBDAS is defined."
 #     error "Defect macro BOOST_NO_CXX11_LAMBDAS is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_LAMBDAS -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_lambdas.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_LAMBDAS -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_lambdas.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_lambdas.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_noexcept.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:771:7: error: "Defect macro BOOST_NO_CXX11_NOEXCEPT is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:771:7: error: "Defect macro BOOST_NO_CXX11_NOEXCEPT is defined."
 #     error "Defect macro BOOST_NO_CXX11_NOEXCEPT is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_NOEXCEPT -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_noexcept.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_NOEXCEPT -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_noexcept.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_noexcept.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_nullptr.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:776:7: error: "Defect macro BOOST_NO_CXX11_NULLPTR is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:776:7: error: "Defect macro BOOST_NO_CXX11_NULLPTR is defined."
 #     error "Defect macro BOOST_NO_CXX11_NULLPTR is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_NULLPTR -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_nullptr.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_NULLPTR -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_nullptr.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_nullptr.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_rvalue_references.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:831:7: error: "Defect macro BOOST_NO_CXX11_RVALUE_REFERENCES is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:831:7: error: "Defect macro BOOST_NO_CXX11_RVALUE_REFERENCES is defined."
 #     error "Defect macro BOOST_NO_CXX11_RVALUE_REFERENCES is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_RVALUE_REFERENCES -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_rvalue_references.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_RVALUE_REFERENCES -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_rvalue_references.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_rvalue_references.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_template_aliases.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:936:7: error: "Defect macro BOOST_NO_CXX11_TEMPLATE_ALIASES is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:936:7: error: "Defect macro BOOST_NO_CXX11_TEMPLATE_ALIASES is defined."
 #     error "Defect macro BOOST_NO_CXX11_TEMPLATE_ALIASES is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_TEMPLATE_ALIASES -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_template_aliases.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_TEMPLATE_ALIASES -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_template_aliases.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_template_aliases.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_thread_local.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:456:7: error: "Defect macro BOOST_NO_CXX11_THREAD_LOCAL is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:456:7: error: "Defect macro BOOST_NO_CXX11_THREAD_LOCAL is defined."
 #     error "Defect macro BOOST_NO_CXX11_THREAD_LOCAL is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_THREAD_LOCAL -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_thread_local.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_THREAD_LOCAL -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_thread_local.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_thread_local.o...
 ...failed updating 1 target...
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_variadic_templates.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:1001:7: error: "Defect macro BOOST_NO_CXX11_VARIADIC_TEMPLATES is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:1001:7: error: "Defect macro BOOST_NO_CXX11_VARIADIC_TEMPLATES is defined."
 #     error "Defect macro BOOST_NO_CXX11_VARIADIC_TEMPLATES is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_VARIADIC_TEMPLATES -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_variadic_templates.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_VARIADIC_TEMPLATES -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_variadic_templates.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_variadic_templates.o...
 ...failed updating 1 target...
@@ -547,12 +547,12 @@ clang-darwin.compile.c++ bin.v2/libs/math/config/clang-darwin-12.0/debug/threadi
 ...found 1 target...
 ...updating 1 target...
 clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_static_assert.o
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp:856:7: error: "Defect macro BOOST_NO_CXX11_STATIC_ASSERT is defined."
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp:856:7: error: "Defect macro BOOST_NO_CXX11_STATIC_ASSERT is defined."
 #     error "Defect macro BOOST_NO_CXX11_STATIC_ASSERT is defined."
       ^
 1 error generated.
 
-    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_STATIC_ASSERT -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_static_assert.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/config/checks/test_case.cpp"
+    "clang++" -x c++ -fvisibility-inlines-hidden -fPIC -m64 -O0 -fno-inline -Wall -g -fvisibility=hidden  -DBOOST_ALL_NO_LIB=1 -DTEST_BOOST_NO_CXX11_STATIC_ASSERT -I"." -c -o "bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_static_assert.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/config/checks/test_case.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/libs/config/checks/clang-darwin-12.0/debug/threading-multi/visibility-hidden/cxx11_static_assert.o...
 ...failed updating 1 target...
@@ -621,7 +621,7 @@ libs/stacktrace/build/has_backtrace.cpp:7:10: fatal error: 'backtrace.h' file no
 ...updating 3 targets...
 clang-darwin.compile.c++ bin.v2/libs/stacktrace/build/clang-darwin-12.0/debug/threading-multi/visibility-hidden/has_addr2line.o
 clang-darwin.link bin.v2/libs/stacktrace/build/clang-darwin-12.0/debug/threading-multi/visibility-hidden/addr2line_exe
-Jamfile</Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/stacktrace/build>.mp_simple_run_action bin.v2/libs/stacktrace/build/clang-darwin-12.0/debug/threading-multi/visibility-hidden/addr2line.output
+Jamfile</Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/stacktrace/build>.mp_simple_run_action bin.v2/libs/stacktrace/build/clang-darwin-12.0/debug/threading-multi/visibility-hidden/addr2line.output
 sh: /usr/bin/addr2line: No such file or directory
 ...updated 3 targets...
 ...found 5 targets...
@@ -657,13 +657,13 @@ libs/stacktrace/build/has_windbg_cached.cpp:11:10: fatal error: 'windows.h' file
 ...found 165 targets...
 ...updating 7 targets...
 clang-darwin.compile.c++ bin.v2/check/predef/clang-darwin-12.0/debug/address-model-64/architecture-x86/predef_check_cc_09a06289f4560e2f553bb0cbbec71436.o
-In file included from /Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/predef/tools/check/predef_check_cc_as_cpp.cpp:7:
-/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/predef/tools/check/predef_check_cc.h:11:9: error: "FAILED"
+In file included from /Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/predef/tools/check/predef_check_cc_as_cpp.cpp:7:
+/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/predef/tools/check/predef_check_cc.h:11:9: error: "FAILED"
 #       error "FAILED"
         ^
 1 error generated.
 
-    "clang++" -x c++ -fPIC -m64 -O0 -fno-inline -Wall -g  -DCHECK="BOOST_COMP_GNUC >= BOOST_VERSION_NUMBER(4,3,0)" -I"/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost" -I"/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/predef/include" -c -o "bin.v2/check/predef/clang-darwin-12.0/debug/address-model-64/architecture-x86/predef_check_cc_09a06289f4560e2f553bb0cbbec71436.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/SandBox/PGE/3dTest/deps/boost/libs/predef/tools/check/predef_check_cc_as_cpp.cpp"
+    "clang++" -x c++ -fPIC -m64 -O0 -fno-inline -Wall -g  -DCHECK="BOOST_COMP_GNUC >= BOOST_VERSION_NUMBER(4,3,0)" -I"/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost" -I"/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/predef/include" -c -o "bin.v2/check/predef/clang-darwin-12.0/debug/address-model-64/architecture-x86/predef_check_cc_09a06289f4560e2f553bb0cbbec71436.o" "/Users/gianlaager/Documents/code/C++/ClionProjects/PGE-triSYCL-extension/deps/boost/libs/predef/tools/check/predef_check_cc_as_cpp.cpp"
 
 ...failed clang-darwin.compile.c++ bin.v2/check/predef/clang-darwin-12.0/debug/address-model-64/architecture-x86/predef_check_cc_09a06289f4560e2f553bb0cbbec71436.o...
 ...failed updating 1 target...
